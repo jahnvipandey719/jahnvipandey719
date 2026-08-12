@@ -1,266 +1,49 @@
-# 👋 Hi, I'm Jahnvi Pandey
+# Jahnvi Pandey — DevOps Portfolio
 
-### ☁️ DevOps Engineer | Azure | Terraform | GitHub Actions | CI/CD | DevSecOps
+A professional, responsive DevOps portfolio built with **HTML, CSS and JavaScript**, deployed automatically to **GitHub Pages using GitHub Actions**.
 
-> **Automate infrastructure. Secure deployments. Build reliable cloud systems.**
+## ✨ Highlights
 
-I'm a **DevOps Engineer** passionate about **Cloud Infrastructure, Infrastructure as Code, CI/CD automation, and DevSecOps**.
+- Azure / Terraform / GitHub Actions focused design
+- Responsive desktop + mobile layout
+- DevOps architecture visualization
+- Project showcase
+- Experience timeline
+- Skills / technology stack
+- GitHub Actions deployment workflow
+- No framework or build step required
 
-My primary focus is building automated and secure infrastructure on **Microsoft Azure** using **Terraform and GitHub Actions**.
+## 🛠️ Stack
 
----
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- GitHub Pages
+- GitHub Actions
 
-## ⚡ What I Do
+## 🚀 Run locally
 
-```text
-☁️ Azure Cloud
-      ↓
-🏗️ Terraform IaC
-      ↓
-⚙️ GitHub Actions CI/CD
-      ↓
-🔐 DevSecOps
-      ↓
-📊 Monitoring & Observability
+Open `index.html` directly in a browser, or serve the directory with any static server.
+
+```bash
+python -m http.server 8000
 ```
 
-I enjoy taking infrastructure from:
+Then open `http://localhost:8000`.
 
-**Manual → Automated → Secure → Repeatable → Observable**
+## 🌐 Deploy
 
----
+1. Create a GitHub repository.
+2. Push this project to the `main` branch.
+3. In **Settings → Pages**, select **GitHub Actions** as the source if prompted.
+4. Push a change. The workflow in `.github/workflows/deploy.yml` will deploy the site.
 
-## 🧰 Tech Stack
+## ⚠️ Personalize before publishing
 
-| Category           | Technologies                                                       |
-| ------------------ | ------------------------------------------------------------------ |
-| ☁️ Cloud           | **Microsoft Azure**, VMs, App Services, Storage, VNets             |
-| 🏗️ IaC            | **Terraform**, Modules, Remote State, Workspaces                   |
-| ⚙️ CI/CD           | **GitHub Actions**, Azure DevOps, YAML                             |
-| 🐳 Containers      | **Docker**, Docker Compose                                         |
-| 🔐 Security        | **Checkov, TFSec, TFLint, Azure Key Vault, RBAC, Azure Policy**    |
-| 🌐 Networking      | VNets, Subnets, NSGs, Application Gateway, Load Balancer, DNS, VPN |
-| 🐧 Linux           | Ubuntu, SSH, Bash, Systemctl, Cron, Permissions                    |
-| 📊 Monitoring      | Azure Monitor, Log Analytics, Application Insights, Alerts         |
-| 🔧 Version Control | Git, GitHub, Pull Requests, Branch Protection                      |
-| 💻 Scripting       | Bash, Python, YAML                                                 |
+Replace the placeholder GitHub and LinkedIn URLs in `index.html` with your real profile/repository URLs.
 
----
+The project cards intentionally use placeholder repository links until the corresponding repositories exist.
 
-# 🚀 Featured Project
+## 📌 Resume alignment
 
-## Azure Infrastructure Automation
-
-### Terraform + GitHub Actions + Docker + Azure
-
-A production-style DevOps project focused on automating **Azure infrastructure provisioning and application deployment**.
-
-### Architecture
-
-```text
-                         GitHub
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │ GitHub Actions  │
-                  │     CI/CD       │
-                  └────────┬────────┘
-                           │
-             ┌─────────────┼─────────────┐
-             ▼             ▼             ▼
-        Terraform       Security       Docker
-        Validation       Scans         Build
-             │             │             │
-             └─────────────┼─────────────┘
-                           ▼
-                  ┌─────────────────┐
-                  │    Terraform    │
-                  │  Plan → Apply   │
-                  └────────┬────────┘
-                           │
-                           ▼
-              ┌─────────────────────────┐
-              │      Microsoft Azure    │
-              │                         │
-              │ VNet → Subnets → NSGs  │
-              │          ↓              │
-              │ Application Gateway     │
-              │          ↓              │
-              │ App Service / VM        │
-              │          ↓              │
-              │ Azure Monitor           │
-              └─────────────────────────┘
-```
-
-### 🔥 Key Implementations
-
-* 🏗️ **Terraform Infrastructure as Code**
-* ☁️ Azure **VNet, Subnets, NSGs, VMs, App Service & Storage**
-* 🔄 **Terraform Remote State** using Azure Blob Storage
-* 🔐 State locking for reliable deployments
-* 🌍 Multi-environment architecture — **Dev / UAT / Prod**
-* ⚙️ GitHub Actions CI/CD automation
-* 🐳 Docker containerization
-* 🔑 GitHub Secrets for sensitive configuration
-* 🛡️ **Checkov + TFSec + TFLint** security and quality checks
-* 📊 Azure Monitor and Application Insights
-* 🐧 Linux administration and Bash automation
-
----
-
-# 🔐 DevSecOps Pipeline
-
-Security is integrated **before infrastructure reaches Azure**.
-
-```text
-        Developer
-            │
-            ▼
-        Git Push
-            │
-            ▼
-     GitHub Actions
-            │
-            ├── Terraform fmt
-            │
-            ├── TFLint
-            │
-            ├── Checkov
-            │
-            ├── TFSec
-            │
-            ├── Terraform validate
-            │
-            ├── Terraform plan
-            │
-            ▼
-       Manual Approval
-            │
-            ▼
-      Terraform Apply
-            │
-            ▼
-       Azure Cloud
-            │
-            ▼
-     Azure Monitoring
-```
-
-> **Shift security left. Validate early. Deploy confidently.**
-
----
-
-# 📂 Featured Repositories
-
-### 🏗️ `azure-terraform-infrastructure`
-
-Infrastructure as Code for Azure using reusable Terraform modules.
-
-**Azure • Terraform • Networking • Security**
-
----
-
-### ⚙️ `github-actions-cicd`
-
-CI/CD pipelines for automated build, validation, security scanning and deployment.
-
-**GitHub Actions • YAML • Docker • CI/CD**
-
----
-
-### 🔐 `terraform-devsecops`
-
-Terraform security and compliance pipeline.
-
-**Checkov • TFSec • TFLint • Terraform**
-
----
-
-### 🐧 `linux-devops-scripts`
-
-Bash automation for Linux administration, health checks, log management and service operations.
-
-**Linux • Bash • SSH • Automation**
-
----
-
-# 📈 My DevOps Focus
-
-```text
-Infrastructure as Code
-        │
-        ▼
-Cloud Automation
-        │
-        ▼
-CI/CD
-        │
-        ▼
-DevSecOps
-        │
-        ▼
-Monitoring
-        │
-        ▼
-Reliable Deployments
-```
-
----
-
-# 🎯 Currently Learning
-
-🔹 Advanced **Azure Architecture**
-🔹 Advanced **Terraform**
-🔹 **DevSecOps & Policy as Code**
-🔹 Advanced **GitHub Actions**
-🔹 Docker & Cloud Deployments
-🔹 Monitoring & Observability
-🔹 GitOps & Infrastructure Automation
-
----
-
-# 💡 DevOps Principles I Follow
-
-**Automate what can be automated.**
-
-**Infrastructure should be defined as code.**
-
-**Security should be part of the pipeline — not an afterthought.**
-
-**Every deployment should be repeatable.**
-
-**If you can't monitor it, you can't reliably operate it.**
-
----
-
-# 📊 GitHub Stats
-
-<p align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=transparent&hide_border=true" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=transparent&hide_border=true" />
-
-</p>
-
----
-
-# 🤝 Let's Connect
-
-📧 **[jahnvip091@gmail.com](mailto:jahnvip091@gmail.com)**
-
-💼 **LinkedIn:** [Jahnvi Pandey](YOUR_LINKEDIN_URL)
-
-🐙 **GitHub:** [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-
----
-
-<p align="center">
-
-### ☁️ Build Infrastructure.
-
-### ⚙️ Automate Everything.
-
-### 🔐 Secure by Design.
-
-</p>
+The portfolio reflects the technologies and experience listed in Jahnvi Pandey's resume: Microsoft Azure, Terraform, GitHub Actions, Azure DevOps, Docker, Linux, networking, DevSecOps tooling and Azure monitoring.
